@@ -1,0 +1,37 @@
+{
+    "name": "node-with-react-js",
+    "version": "1.0.0",
+    "description": "Example project for setting up Node.js with full stack React (using Javascript)",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel src --out-dir dist --source-maps --copy-files",
+        "dev": "nodemon --exec npm run restart",
+        "restart": "rimraf dist && npm run build && npm run start",
+        "start": "node dist/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/adam-arold/node-with-react-js.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/adam-arold/node-with-react-js/issues"
+    },
+    "homepage": "https://github.com/adam-arold/node-with-react-js#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.6",
+        "rimraf": "^3.0.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.8",
+        "@babel/core": "^7.12.9",
+        "@babel/eslint-parser": "^7.12.1",
+        "@babel/preset-env": "^7.12.7",
+        "eslint": "^7.14.0",
+        "eslint-config-prettier": "^6.15.0",
+        "prettier": "^2.2.0"
+    }
+}
